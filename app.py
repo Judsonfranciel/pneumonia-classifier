@@ -33,9 +33,9 @@ def classify():
     img_file.save(image_path)
 
     # Load the image using Keras
-    # image = load_img(io.BytesIO(img_file.read()), target_size=(64, 64))
-    image = load_img(image_path, target_size=(64, 64))
-    # image = image.resize((64, 64))
+    # image = load_img(io.BytesIO(img_file.read()), target_size=(128, 128))
+    image = load_img(image_path, target_size=(128, 128))
+    # image = image.resize((128, 128))
 
     model = load_model('pneumonia.h5')
 
